@@ -56,11 +56,11 @@ class Student
      student
    end
 
-   def new_from_db
-     sql = <<-SQL
-        SELECT * FROM students
-     SQL
-     DB[:conn].execute(sql,self.name, self.grade, self.id)
+   def new_from_db(row)
+     student = Student.new
+     student.name = row[0],
+     student.grade = row[1],
+     student.id = row[2]
    end
 
   # Remember, you can access your database connection anywhere in this class
