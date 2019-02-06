@@ -65,6 +65,10 @@ class Student
   #   #  student.id = id
   #    student
   #  end
+  def self.new_from_db(row)
+    # create a new Student object given a row from the database
+    student = self.new(row[1], row[2], row[0])
+    student
 
 
   # Remember, you can access your database connection anywhere in this class
