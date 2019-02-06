@@ -69,7 +69,7 @@ class Student
     # create a new Student object given a row from the database
     student = self.new(row[1], row[2], row[0])
     student
-
+end
 
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
