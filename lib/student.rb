@@ -61,6 +61,7 @@ class Student
      student.name = row[0],
      student.grade = row[1],
      student.id = row[2]
+     student
    end
 
   # Remember, you can access your database connection anywhere in this class
