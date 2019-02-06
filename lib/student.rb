@@ -65,10 +65,7 @@ class Student
   #   #  student.id = id
   #    student
   #  end
-  def self.new_from_db(row)
-   student_new = self.new(row[0], row[1], row[2])
-   student_new
- end
+
 
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
