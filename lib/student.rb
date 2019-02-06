@@ -52,9 +52,6 @@ class Student
 
    def self.create(name:, grade:)
      student = Student.new
-     student.name = name
-     student.grade = grade
-
      student.save
      student
    end
